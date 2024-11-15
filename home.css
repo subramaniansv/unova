@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+body{
+    font-family: "lato";
+    margin: 0px;
+    padding: 0;
+    border: 0;
+}
+.navBar { 
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    
+    height: 100px;
+    padding: 0 20px;
+}
+
+.navBar .logo img {
+    height: 200px;
+    width: 300px;
+    margin-right: 10px; 
+}
+
+.navBar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px; 
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.homeContainer {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+}
+.homeContainer button{
+    background-color:#D2122E;
+}
+.homeContainer .left, .homeContainer .right {
+    flex: 1;
+    padding: 30px;
+}
+.homeContainer .left p {
+    margin: 20px 0;
+}
+
+.homeContainer .right p {
+    font-size: 1.2em;
+    color: #333;
+}
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust based on your layout */
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-image.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px; /* Increased padding for top and bottom */
+    background-color: #1CAC78; /* Optional: Light background to differentiate */
+}
+
+.pricingContainer {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto; /* Space between this and other sections */
+    padding: 20px; /* Internal padding to prevent text from touching edges */
+    gap: 20px; /* Space between elements inside the container */
+}
+
+.left, .right {
+    flex: 1; /* Ensures equal spacing */
+    padding: 10px; /* Adds internal spacing */
+}
+
+.left img {
+    width: 100%;
+    height: auto;
+}
+
+.services {
+    text-align: center; /* Center the title and paragraph */
+   
+}
+
+.serlist {
+    display: flex;
+    justify-content: center; /* Center the three services horizontally */
+    gap: 20px; /* Add spacing between the columns */
+    /* Space from the text above */
+}
+
+.ser1 {
+    width: 30%; /* Each service box takes up 30% of the container width */
+    padding: 20px;
+    background-color: yellow; /* Light background color for the boxes */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
+    text-align: center; /* Center the text inside each box */
+}
+.whyunova {
+    margin-top: 50px; /* Space from the top of the page */
+}
+
+.whyContainer {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly between the two sections */
+    align-items: center; /* Vertically align content */
+    gap: 20px; /* Add spacing between the two columns */
+    max-width: 1200px; /* Limit the max width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding for the container */
+}
+
+.left, .right {
+    width: 48%; /* Each side takes up 48% of the container width */
+}
+
+.left h1, .right h1 {
+    font-size: 2rem; /* Increase size of headings */
+    margin-bottom: 10px; /* Add space between heading and text */
+}
+.whyContainer .left{
+    margin-bottom: 180px;
+    margin-left: 13px;
+}
+.left p, .right p {
+    font-size: 1rem;
+    color: #666; /* Light color for text */
+}
+.left p{
+    line-height: 2.8;
+}
+.right {
+    text-align: left; /* Align the text to the right on the right side */
+}
+.right h3 {
+    margin-bottom: 5px; 
+}
+
+.right p {
+    margin-top: 0; /* Remove extra margin from the top of the paragraph */
+}
+.icon{
+    height: 50px;
+    width: 50px;
+}
+.sicon{
+    height: 40px;
+    width: 40px; 
+}
+.iconh{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.contactform {
+    margin-top: 50px;
+    padding: 20px;
+    background-color:#0CAFFF ;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px; /* Space between the left and right columns */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+    background-color:#0CAFFF ;
+}
+
+.left, .right {
+    width: 48%; /* Each section will take 48% of the container's width */
+}
+.container .left{
+    margin-bottom: 150px;
+}
+.left p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between the form fields */
+}
+
+.right input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.right button {
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.right button:hover {
+    background-color: #555; /* Darker on hover */
+}
+footer {
+    background-color:#00308F;
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+footer h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 30px; /* Space between sections and copyright */
+}
+
+.footlist {
+    width: 30%; /* Each column will take 30% of the width */
+}
+
+.footlist h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footlist p, .footlist ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footlist ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footlist ul li {
+    margin-bottom: 8px;
+}
+
+.footerContainer .footlist ul li:hover {
+    text-decoration: underline; /* Hover effect on list items */
+}
+
+copyright {
+    font-size: 1rem;
+    color: #ccc;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

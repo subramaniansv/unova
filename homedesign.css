@@ -1,0 +1,125 @@
+.navBar  a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.navBar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 0;
+    height: 2px;
+    background-color: rgb(133, 133, 133); 
+    transition: width 0.5s ease; 
+}
+
+.navBar  a:hover::after {
+    width: 100%; 
+}
+.homeContainer .left h4{
+    color: gray;
+    margin-bottom: 0cm;
+}
+.homeContainer .left h1{
+    font-size: 2.5em;
+    margin-top: 3px;
+}
+.homeContainer .left button{
+    height: 40px;
+    width: 160px;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    font-size: 16px;
+}
+.homeContainer .left {
+    opacity: 0; 
+    animation: fadeIn 1s ease forwards; 
+    animation-delay: 0.5s; 
+}
+
+
+
+.homeContainer .left button:hover{
+    color: #D2122E;
+    background-color: white;
+    border: 1px solid rgb(108, 108, 108);
+    transition: all 1s;
+}
+.pricingContainer .right p{
+    color: white;
+    line-height: 40px;
+}
+
+.pricingContainer .left,
+.pricingContainer .right {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 2.5s ease, opacity 2.5s ease; 
+}
+
+.animate .left,
+.animate .right {
+    transform: translateY(0);
+    opacity: 1; 
+}
+.whyContainer .left,
+.whyContainer .right {
+    opacity: 0; 
+    position: relative; 
+}
+
+.whyContainer .left.animated {
+    animation: slideInLeft 1s ease forwards;
+}
+
+.whyContainer .right.animated {
+    animation: slideInRight 1s ease forwards;
+}
+
+
+
+.box{
+        background-color:#F0F8FF ;
+    
+        width: 400px;
+        padding: 30px; 
+        border: 2px solid #ccc; 
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease; 
+    }
+    
+.box:hover {
+        transform: scale(1.05);
+     }
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100px); 
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1; 
+    }
+}
+@keyframes slideInLeft {
+    0% { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+    0% { transform: translateX(100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}

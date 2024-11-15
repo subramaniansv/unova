@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNOVA</title>
+    <link rel="icon" href="src/logopng.png" type="image/x-icon">
+    <link rel="stylesheet" href="homedesign.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <nav>
+        <div class="navBar">
+            <div class="logo">
+                <img src="src/logopng-removebg-preview.png">
+            </div>
+            <div class="navList">
+                <ul>
+                    <a href="#"><li>ABOUT</li></a>
+                    <a href="#"><li>SERVICES</li></a>
+                    <a href="#"><li>CONTACT</li></a>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+    <section>
+        <div class="home" id="home">
+            <div class="homeContainer">
+                <div class="left">
+                    <h4>-Web Development and Designing Platform</h4>
+                    <h1>Elevate your <br>business<br> with Unova</h1>
+                    <p>With UNOVA we are making offline business onboard at a competitive pricing</p>
+                    <button>Connect with us</button>
+                </div>
+                <div class="right">
+                    <div class="hero-banner">
+                        <img src="src/web1.jpeg" class="hero-image" alt="Image 1">
+                        <img src="src/web2.jpeg" class="hero-image" alt="Image 2">
+                        <img src="src/web3.jpeg" class="hero-image" alt="Image 1">
+                        <img src="src/web4.jpeg" class="hero-image" alt="Image 2">
+                        <img src="src/web5.jpeg" class="hero-image" alt="Image 1">
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="pricing">
+            <div class="pricingContainer">
+                <div class="left">
+                    <img src="src/web6.png" >
+                </div>
+                <div class="right">
+                    <h1>Stunning website at $200</h1>
+                    <p>
+                        Our websites are crafted to be visually appealing, interactive, and fully responsive. From personal blogs and e-commerce stores to corporate websites and custom web applications, we offer a complete solution tailored to your needs. Whether you’re looking to captivate your audience or highlight your products, we have the skills and expertise to make your website stand out.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="services">
+            <h1>SERVICES</h1>
+            <p>
+                We provide not only an impressive website but also interactive, user-friendly solutions that engage visitors and boost conversions</p>
+            <div class="serlist">
+                <div class="ser1">blaghhhh</div>
+                <div class="ser1">blahh</div>
+                <div class="ser1">blahh</div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="whyunova">
+            <div class="whyContainer">
+                <div class="left">
+                    <h1>UNOVA</h1>
+                    <p> Where creativity meets technology. Explore our dynamic portfolio, featuring the innovative work of passionate creators in web development and design. Proudly crafted by young minds eager to help businesses thrive online </p>
+                </div>
+                <div class="right">
+                    <div class="iconh"><img src="src/FAST & FLEX.png" alt="" class="icon"><h3>Fast and Flexible</h3></div>
+                    <p>We deliver quick and adaptable solutions that align with your business needs</p>
+                    <div class="iconh" class="sicon"><img src="src/AFFORDABLE.png" alt="" class="icon"><h3>Effective price without compromising quality </h3><br></div>
+                    <p>Get high-quality services at competitive prices that fit your budget</p>
+                    
+                    <div class="iconh"><img src="src/IDEAS COLLAB.png" alt="" srcset="" class="icon"><h3>Stimulating Ideas through collaboration</h3><br></div>
+                    <p>Our collaborative approach fosters creative solutions that drive your success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="contactform">
+            <div class="container">
+                <div class="left">
+                    
+                    <h1>Connect With us:</h1>
+                    <p class="white">Ready to take your online presence to the next level? Whether you're looking to build a stunning website, boost your search engine visibility, or simply have questions, we're here to help. Drop us a message, and let’s start crafting digital solutions tailored just for you!</p>
+                </div>
+                
+                <div class="right">
+                    <div class="box">
+                    <form class="contactForm">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="email">
+                        <input type="text" placeholder="subject">
+                        <input type="text" placeholder="comment">
+                        <button type="submit">Connect</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h1>UNOVA</h1>
+        <div class="footerContainer">
+            <div class="footlist">
+                <h3>UNOVA</h3>
+                <p> Our focus is on creating dynamic, responsive websites that not only look great but also function seamlessly across all devices.We deliver web experiences that truly represent your brand and business goals.<p>
+            </div>
+            <div class="footlist">
+                <h3>SERVICES</h3>
+                <ul>
+                    <li>WEb Development</li>
+                    <li>Web Designing</li>
+                    <li>Marketing</li>
+                </ul>
+            </div>
+            <div class="footlist">
+                <h3>Contact us</h3>
+                <ul>
+                    <li>email</li>
+                    <li>phone</li>
+                    <li>whatsapp</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="color: white;">
+        <div class="copyright">
+            copyright|All rights reserved to UNOVA
+        </div>
+    </footer>
+    <script>
+const images = document.querySelectorAll('.hero-image');
+let currentIndex = 0;
+
+function showNextImage() {
+   
+    images[currentIndex].classList.remove('active');
+    
+   
+    currentIndex = (currentIndex + 1) % images.length;
+
+   
+    images[currentIndex].classList.add('active');
+}
+
+
+images[currentIndex].classList.add('active');
+
+
+setInterval(showNextImage, 3000);
+document.addEventListener("DOMContentLoaded", function () {
+    const pricingContainer = document.querySelector(".pricingContainer");
+
+    function onScroll() {
+        const rect = pricingContainer.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+       
+        if (rect.top <= windowHeight - 100) { 
+            pricingContainer.classList.add("animate");
+            window.removeEventListener("scroll", onScroll); 
+        }
+    }
+
+    window.addEventListener("scroll", onScroll);
+});
+document.addEventListener("DOMContentLoaded", function() {
+  const leftElement = document.querySelector('.whyContainer .left');
+  const rightElement = document.querySelector('.whyContainer .right');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Add the animation class when the element is in view
+        if (entry.target === leftElement) {
+          leftElement.classList.add('animated');
+        }
+        if (entry.target === rightElement) {
+          rightElement.classList.add('animated');
+        }
+      }
+    });
+  }, {
+    threshold: 0.5 // Trigger when 50% of the element is in view
+  });
+
+  // Observe the elements
+  observer.observe(leftElement);
+  observer.observe(rightElement);
+});
+
+    </script>
+</body>
+</html>
