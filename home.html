@@ -69,9 +69,18 @@
             <p>
                 We provide not only an impressive website but also interactive, user-friendly solutions that engage visitors and boost conversions</p>
             <div class="serlist">
-                <div class="ser1">blaghhhh</div>
-                <div class="ser1">blahh</div>
-                <div class="ser1">blahh</div>
+                <div class="ser1">
+                    <h3>WEB DEVELOPMENT</h3>
+                   <p> We make attractive,accessible websites that elevate your business and helps to reach more customers</p>
+                </div>
+                <div class="ser1">
+                    <h3>WEB DESIGNING</h3>
+                    <p>We create impressive design that makes your company uniue in your field </p>
+                </div>
+                <div class="ser1">
+                    <h3>MARKETNG</h3>
+                    <p>Boost your online presence and connect wit more peoples</p>
+                </div>
             </div>
         </div>
     </section>
@@ -105,12 +114,13 @@
                 
                 <div class="right">
                     <div class="box">
-                    <form class="contactForm">
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="email">
-                        <input type="text" placeholder="subject">
-                        <input type="text" placeholder="comment">
-                        <button type="submit">Connect</button>
+                    <form class="contactForm"  action="https://formspree.io/f/xbljyeaa"
+                    method="POST">
+                        <input type="text" placeholder="Name" name="Name">
+                        <input type="email" placeholder="Email" name="Email">
+                        <input type="text" placeholder="Subject" name="Subject">
+                        <input type="text" placeholder="Comment" name="Comment">
+                        <button type="submit" id="connectbtn">Connect</button>
                     </form>
                     </div>
                 </div>
@@ -123,6 +133,9 @@
             <div class="footlist">
                 <h3>UNOVA</h3>
                 <p> Our focus is on creating dynamic, responsive websites that not only look great but also function seamlessly across all devices.We deliver web experiences that truly represent your brand and business goals.<p>
+                    <a href="https://www.instagram.com/unova_offical/profilecard/" target="_blank"><img src="src/instagram.png" alt=""></a>
+                    <a href="https://wa.me/9843471463" target="_blank"><img src="src/whatsapp.png" alt=""></a>
+                    <a href="https://youtube.com/@unova1" target="_blank" ><img src="src/youtube.png" alt=""></a>
             </div>
             <div class="footlist">
                 <h3>SERVICES</h3>
@@ -135,17 +148,19 @@
             <div class="footlist">
                 <h3>Contact us</h3>
                 <ul>
-                    <li>email</li>
-                    <li>phone</li>
-                    <li>whatsapp</li>
+                    <li><a href="mailto:unova0001@gmail.com">email</a></li>
+                    <li><a href="tel:+919843471463">phone</a></li>
+                    <li><a href="https://wa.me/9843471463" target="_blank">WhatsApp</a></li>
                 </ul>
             </div>
         </div>
         <hr style="color: white;">
         <div class="copyright">
-            copyright|All rights reserved to UNOVA
+            copyright	&#169; |All rights reserved to <a href="#home">UNOVA</a>
         </div>
     </footer>
+    <a href="#" id="back-to-top" title="Back to top">↑</a>
+
     <script>
 const images = document.querySelectorAll('.hero-image');
 let currentIndex = 0;
@@ -206,6 +221,26 @@ document.addEventListener("DOMContentLoaded", function() {
   observer.observe(leftElement);
   observer.observe(rightElement);
 });
+
+    // Show or hide the button when scrolling
+    window.onscroll = function () {
+        const backToTopButton = document.getElementById('back-to-top');
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    };
+
+    // Smooth scroll to the top
+    document.getElementById('back-to-top').addEventListener('click', function (e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
 
     </script>
 </body>
